@@ -20,7 +20,6 @@ export default defineConfig({
   schema: "prisma/schema.prisma",
   datasource: {
     url: withSslMode(env("DATABASE_URL")),
-    directUrl: withSslMode(env("DIRECT_URL")),
   },
   migrations: {
     path: "prisma/migrations",
